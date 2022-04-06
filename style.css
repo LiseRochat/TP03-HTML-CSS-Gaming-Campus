@@ -1,0 +1,209 @@
+:root {
+    --color1: #090909;
+    --color2: #f7f7f7;
+    --color3: #2a2a2a;
+    --color4: #e1e1e1;
+    --color5: #8f00fd;
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ************************* NAV BAR ************************* */
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin: 0px 15%;
+}
+
+header nav ul li {
+    height: 100%;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: var(--color1);
+    height: 100%;
+    display: block;
+    padding-top: 20px;
+    border-top: 4px solid transparent;
+}
+
+header nav ul li a:hover {
+    color: var(--color5);
+    border-top: 4px solid var(--color5);
+}
+
+/* ************************* BACKGROUND IMAGE ************************* */
+header section {
+    background: url(assets/img/bg.jpg) center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section div h1 {
+    color: var(--color2);
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+header section div button {
+    padding: 20px;
+    text-transform: uppercase;
+    border: 1px solid var(--color2);
+    background: transparent;
+    color: var(--color2);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+header section div button i {
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+/* ************************* MAIN ************************* */
+/* ************************* DIV PARAGRAPHE ************************* */
+.main_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 25vh;
+    background: var(--color4);
+}
+
+.main_p p {
+    color: var(--color1);
+    text-align: center;
+    font-weight: bold;
+    margin: 0 15%;
+}
+
+/* ************************* DIV ARTICLES  ************************* */
+.main_div-container {
+    background: var(--color3);
+}
+
+.main_div-articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin: 0px 15%;
+}
+
+.main_div-articles article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_div-articles article img {
+    margin-bottom: 10%;
+}
+
+.main_div-articles article h3 {
+    color: var(--color2);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 3%;
+}
+
+.main_div-articles article p {
+    color: var(--color2);
+    text-align: center;
+}
+
+.main_div-articles article button {
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid var(--color2);
+    background: transparent;
+    color: var(--color2);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-top: 10%;
+}
+
+/* ************************* DIV LES NEWS DU CAMPUS  ************************* */
+.main_section-news {
+    background: var(--color4);
+    padding: 6% 0;
+}
+
+.main_section2-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 15%;
+}
+
+.main_section2-txt h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    margin-bottom: 2%;
+}
+
+.main_section2-txt p {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.main_section2-grid button {
+    padding: 10px 0;
+    text-transform: uppercase;
+    border: 1px solid var(--color1);
+    background: transparent;
+    color: var(--color1);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-top: 10%;
+    border-radius: none;
+    width: 70%;
+}
+
+.main_section2-grid button i {
+    padding-left: 10px;
+}
+
+/* ************************* ARTICLES LES NEWS DU CAMPUS  ************************* */
+.main_article-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 15%;
+}
+
+.main_article-flex article {
+    width: 20%;
+}
+
+.main_article-img img {
+    margin: 2% 0;
+    box-shadow: 2px 2px 2px hsla(0, 0%, 4%, 0.392);
+}

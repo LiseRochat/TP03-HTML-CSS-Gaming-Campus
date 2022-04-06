@@ -22,36 +22,38 @@
     <header>
       <nav>
         <ul>
-          <li>accueil</li>
-          <li>business school</li>
-          <li>ecole esport</li>
-          <li>cours de jeu vidéo</li>
-          <li>le Campus</li>
-          <li>newsroom</li>
-          <li>parents</li>
-          <li>FR | EN</li>
+          <li><a href="#">accueil</a></li>
+          <li><a href="#">business school</a></li>
+          <li><a href="#">ecole esport</a></li>
+          <li><a href="#">cours de jeu vidéo</a></li>
+          <li><a href="#">le Campus</a></li>
+          <li><a href="#">newsroom</a></li>
+          <li><a href="#">parents</a></li>
+          <li><a href="#">FR | EN</a></li>
         </ul>
       </nav>
       <section>
-        <img src="assets/img/logo-gc-hero.png" alt="logo gaming campus" />
-        <h1>passion. professionnalisme. performance.</h1>
-        <button>
-          gaming campus en video
-          <i class="fa-solid fa-angle-right"></i>
-        </button>
+        <div>
+          <img src="assets/img/logo-gc-hero.png" alt="logo gaming campus" />
+          <h1>passion. professionnalisme. performance.</h1>
+          <button>
+            gaming campus en video
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
       </section>
     </header>
     <main>
       <!-- Une balise section a besoin d'un titre pour passé au w3v validateur HTML -->
-      <div>
+      <div class="main_p">
         <p>
-          imaginé par des professionnels des jeux vidéo et de l'éducation,
+          Imaginé par des professionnels des jeux vidéo et de l'éducation,
           Gaming Campus est un lieu unique pour révéler les talents et
           développer les compétences.
         </p>
       </div>
-      <div>
-        <div>
+      <div class="main_div-container">
+        <div class="main_div-articles">
           <article>
             <div>
               <img
@@ -93,25 +95,26 @@
           </article>
         </div>
       </div>
-      <section>
-        <div>
-          <div>
-            <h2>les news du campus</h2>
-            <p>
-              Suivez l'actualité du Gaming Campus, de G.Guru, G.B.S et
-              G.Academy.
-            </p>
+      <section class="main_section-news">
+        <div class="main_section2-grid">
+          <div class="main_section2-txt">
+              <h2>les news du campus</h2>
+              <p>
+                Suivez l'actualité du Gaming Campus, de G.Guru, G.B.S et
+                G.Academy.
+              </p>
           </div>
           <button>
             la newsroom
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
-        <article>
-          <div>
+        <div class="main_article-flex">
+          <article>
+          <div class="main_article-img">
             <img src="assets/img/ri8decembre.jpg" alt="photo" />
           </div>
-          <h4>réunion d'information 19 décembre</h4>
+          <h4>Réunion d'information 19 décembre</h4>
           <p>
             venez à notre rencontre lors de cette réunion d'information.
             Témoignages des étudiants / Ateleiers sur la pédagogie par projet
@@ -122,9 +125,9 @@
             Sur Inscription
             <i class="fa-solid fa-angle-right"></i>
           </a>
-        </article>
-        <article>
-          <div>
+          </article>
+          <article>
+          <div class="main_article-img">
             <img src="assets/img/pgw18home.jpg" alt="photo" />
           </div>
           <h4>Paris Games Week 2018 et réunions d'information</h4>
@@ -136,9 +139,9 @@
             Lire la suite
             <i class="fa-solid fa-angle-right"></i>
           </a>
-        </article>
-        <article>
-          <div>
+          </article>
+          <article>
+          <div class="main_article-img">
             <img
               src="assets/img/inauguration_gaming_campus_photo.jpg"
               alt="photo"
@@ -154,7 +157,8 @@
             Lire la suite
             <i class="fa-solid fa-angle-right"></i>
           </a>
-        </article>
+          </article>
+        </div>
       </section>
       <section>
         <div>
