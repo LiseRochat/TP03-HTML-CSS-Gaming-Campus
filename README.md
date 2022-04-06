@@ -1,7 +1,7 @@
 # TP03-HTML-Integration-Maquette-Complexe
 
 Initialisation au language HTML.<br>
-**1**Intégration d'une maquette complexe en html. 
+**1** Intégration d'une maquette complexe en html.<br>
 **2.** Intégration du CSS.<br>
 
 ***Version*** : HTML 5<br>
