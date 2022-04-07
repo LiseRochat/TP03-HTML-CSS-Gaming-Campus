@@ -27,7 +27,6 @@ button {
 /* ************************* NAV BAR ************************* */
 nav {
     /* On définit une taille à la nav bar*/
-    min-width: 1100px;
     margin: 0 auto;
 }
 header nav ul {
@@ -265,6 +264,7 @@ header section div button i {
     gap: 40px;
     position: relative;
 }
+/* Barre de séparation */
 .lastsection_div-grid:after {
     content: "";
     position: absolute;
@@ -282,14 +282,31 @@ header section div button i {
 .flex h5 {
     font-size: 1.1em;
 }
-.flex h5,
-.flex h6 {
+.pratcicalInfos {
+    margin: 15px;
+}
+.pratcicalInfos li {
+    margin: 10px 0;
+}
+.lastsection_div-grid img {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.flex h5 {
     text-transform: uppercase;
     font-weight: bold;
+    margin: 8px;
+}
+.flex h6 {
+    font-style: 0.8em;
+    margin-bottom: 8px;
 }
 .flex p {
     font-weight: bold;
     font-size: 0.9em;
+    line-height: 22px;
+    margin-bottom: 15px;
 }
 .flex ul li a {
     color: var(--color5);
@@ -297,7 +314,7 @@ header section div button i {
 .lastsection_div-speakAbout {
     display: grid;
     grid-template-columns: 30% 70%;
-    margin: 40px 5%;
+    padding: 60px 5% 15px;
     height: auto;
     align-items: center;
 }
@@ -322,17 +339,15 @@ header section div button i {
 .ul_li-followus {
     display: flex;
 }
-.pratcicalInfos li {
-    margin: 10px 0;
-}
 #mail {
     color: var(--color1);
     text-decoration: none;
     font-size: 0.9em;
 }
-.ul_li-followus li a {
-    padding: 10px;
+.ul_li-followus li a i{
+    margin: 0 12px 30px 0;
     color: var(--color1);
+    font-size: 0.8em;
 }
 /* ************************* FOOTER ************************* */
 footer {
@@ -358,8 +373,19 @@ footer ul {
     nav {
         display: none;
     }
+    h1 {
+        text-align: center;
+    }
+    .headerimg {
+        width: 60%;
+    }
+    .main_p p {
+        padding: 20px;
+        line-height: 1.2em;
+    }
     .main_div-container {
-        height: 1200px;
+        height: 1000px;
+        padding: 0;
     }
     .main_div-articles {
         flex-direction: column;
@@ -376,7 +402,7 @@ footer ul {
         text-align-last: center;
     }
     .main_section2-grid button {
-        width: 40%;
+        width: 55%;
         margin: 5%;
     }
     .main_section-news {
@@ -392,7 +418,13 @@ footer ul {
     .lastsection {
         display: none;
     }
+    footer {
+        padding: 20px;
+    }
     footer ul {
         flex-wrap: wrap;
+    }
+    footer li {
+        margin: 5px;
     }
 }
