@@ -40,6 +40,7 @@ header nav ul li a {
     display: block;
     padding-top: 20px;
     border-top: 4px solid transparent;
+    transition: 0.4s;
 }
 
 header nav ul li a:hover {
@@ -153,7 +154,10 @@ header section div button i {
 /* ************************* DIV LES NEWS DU CAMPUS  ************************* */
 .main_section-news {
     background: var(--color4);
-    padding: 6% 0;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .main_section2-grid {
@@ -192,18 +196,151 @@ header section div button i {
 }
 
 /* ************************* ARTICLES LES NEWS DU CAMPUS  ************************* */
+main_section-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .main_article-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5% 15%;
+    margin: 0px 10%;
 }
 
 .main_article-flex article {
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 470px;;
+    width: calc(70%/3);
 }
 
 .main_article-img img {
-    margin: 2% 0;
     box-shadow: 2px 2px 2px hsla(0, 0%, 4%, 0.392);
+}
+
+.main_article-flex article a {
+    color: var(--color5);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    width: 100%;
+    margin-top: 5px;
+    align-items: left;
+    padding: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.main_article-flex article a i {
+    padding-left: 10px;
+    font-size: 0.8em;;
+}
+
+/* ************************* ARTICLES INFORMATIONS PRATIQUES ************************* */
+.lastsection_div-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px 20%;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.flex h5 {
+    font-size: 1.1em;
+}
+
+.flex h5,
+.flex h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.flex p {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.flex ul li a {
+    color: var(--color5);
+}
+
+.lastsection_div-speakAbout {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 40px 5%;
+    height: 100px;
+    align-items: center;
+}
+
+.lastsection_div-speakAbout div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.lastsection_div-speakAbout div h5 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lastsection_div-speakAbout div p {
+    font-weight: bold;
+}
+
+.lastsection_div-speakAbout ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul_li-followus {
+    display: flex;
+}
+
+.pratcicalInfos li {
+    margin: 10px 0;
+}
+
+#mail {
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.ul_li-followus li a {
+    padding: 10px;
+    color: var(--color1);
+}
+/* ************************* FOOTER ************************* */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background: var(--color1);
+    color: var(--color2);
+}
+
+footer h4 {
+    font-size: 1.3em;
+}
+
+footer ul {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
