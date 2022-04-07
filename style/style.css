@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/font/Montserrat-VariableFont_wght);
+}
 :root {
     --color1: #090909;
     --color2: #f7f7f7;
@@ -13,7 +17,7 @@
     text-decoration: none;
 }
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Montserrat";
 }
 button {
     cursor: pointer;
