@@ -5,7 +5,6 @@
     --color4: #e1e1e1;
     --color5: #8f00fd;
 }
-
 * {
     list-style: none;
     margin: 0;
@@ -13,15 +12,12 @@
     box-sizing: 0;
     text-decoration: none;
 }
-
 body {
     font-family:Arial, Helvetica, sans-serif;
 }
-
 button {
     cursor: pointer;
 }
-
 /* ************************* NAV BAR ************************* */
 header nav ul {
     display: flex;
@@ -30,11 +26,9 @@ header nav ul {
     height: 10vh;
     margin: 0px 15%;
 }
-
 header nav ul li {
     height: 100%;
 }
-
 header nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
@@ -46,12 +40,10 @@ header nav ul li a {
     border-top: 4px solid transparent;
     transition: 0.4s;
 }
-
 header nav ul li a:hover {
     color: var(--color5);
     border-top: 4px solid var(--color5);
 }
-
 /* ************************* BACKGROUND IMAGE ************************* */
 header section {
     background: url(assets/img/bg.jpg) center/cover;
@@ -60,20 +52,17 @@ header section {
     justify-content: center;
     align-items: center;
 }
-
 header section div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
 header section div h1 {
     color: var(--color2);
     text-transform: uppercase;
     margin: 20px;
 }
-
 header section div button {
     padding: 20px;
     text-transform: uppercase;
@@ -83,12 +72,10 @@ header section div button {
     font-weight: bold;
     letter-spacing: 0.2em;
 }
-
 header section div button i {
     padding-right: 10px;
     padding-left: 20px;
 }
-
 /* ************************* MAIN ************************* */
 /* ************************* DIV PARAGRAPHE ************************* */
 .main_p {
@@ -99,19 +86,16 @@ header section div button i {
     height: 25vh;
     background: var(--color4);
 }
-
 .main_p p {
     color: var(--color1);
     text-align: center;
     font-weight: bold;
     margin: 0 15%;
 }
-
 /* ************************* DIV ARTICLES  ************************* */
 .main_div-container {
     background: var(--color3);
 }
-
 .main_div-articles {
     display: flex;
     justify-content: space-between;
@@ -119,18 +103,16 @@ header section div button i {
     height: 80vh;
     margin: 0px 15%;
 }
-
 .main_div-articles article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
 .main_div-articles article img {
     margin-bottom: 10%;
+    margin-top: 10%;
 }
-
 .main_div-articles article h3 {
     color: var(--color2);
     text-transform: uppercase;
@@ -138,12 +120,10 @@ header section div button i {
     letter-spacing: 0.1em;
     margin-bottom: 3%;
 }
-
 .main_div-articles article p {
     color: var(--color2);
     text-align: center;
 }
-
 .main_div-articles article button {
     padding: 10px;
     text-transform: uppercase;
@@ -154,7 +134,6 @@ header section div button i {
     letter-spacing: 0.2em;
     margin-top: 10%;
 }
-
 /* ************************* DIV LES NEWS DU CAMPUS  ************************* */
 .main_section-news {
     background: var(--color4);
@@ -163,25 +142,21 @@ header section div button i {
     justify-content: space-around;
     flex-direction: column;
 }
-
 .main_section2-grid {
     display: grid;
     grid-template-columns: 70% 30%;
     margin: 0 15%;
 }
-
 .main_section2-txt h2 {
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 0.1em;
     margin-bottom: 2%;
 }
-
 .main_section2-txt p {
     font-weight: bold;
     font-size: 0.9rem;
 }
-
 .main_section2-grid button {
     padding: 10px 0;
     text-transform: uppercase;
@@ -194,11 +169,9 @@ header section div button i {
     border-radius: none;
     width: 70%;
 }
-
 .main_section2-grid button i {
     padding-left: 10px;
 }
-
 /* ************************* ARTICLES LES NEWS DU CAMPUS  ************************* */
 main_section-news {
     display: flex;
@@ -211,20 +184,17 @@ main_section-news {
     align-items: center;
     margin: 0px 10%;
 }
-
 .main_article-flex article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 470px;;
+    height: 470px;
     width: calc(70%/3);
 }
-
 .main_article-img img {
     box-shadow: 2px 2px 2px hsla(0, 0%, 4%, 0.392);
 }
-
 .main_article-flex article a {
     color: var(--color5);
     font-weight: bold;
@@ -238,91 +208,75 @@ main_section-news {
     font-size: 0.9em;
     font-weight: bold;
 }
-
 .main_article-flex article a i {
     padding-left: 10px;
     font-size: 0.8em;;
 }
-
 /* ************************* ARTICLES INFORMATIONS PRATIQUES ************************* */
 .lastsection_div-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0px 20%;
+    margin: 0px 10%;
     padding: 50px 0;
     gap: 40px;
 }
-
 .flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
-
 .flex h5 {
     font-size: 1.1em;
 }
-
 .flex h5,
 .flex h6 {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .flex p {
     font-weight: bold;
     font-size: 0.9em;
 }
-
 .flex ul li a {
     color: var(--color5);
 }
-
 .lastsection_div-speakAbout {
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 40px 5%;
-    height: 100px;
+    height: auto;
     align-items: center;
 }
-
 .lastsection_div-speakAbout div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
+    height: auto;
 }
-
 .lastsection_div-speakAbout div h5 {
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .lastsection_div-speakAbout div p {
     font-weight: bold;
 }
-
 .lastsection_div-speakAbout ul {
     display: flex;
     justify-content: space-between;
 }
-
 .ul_li-followus {
     display: flex;
 }
-
 .pratcicalInfos li {
     margin: 10px 0;
 }
-
 #mail {
     color: var(--color1);
     text-decoration: none;
     font-size: 0.9em;
 }
-
 .ul_li-followus li a {
     padding: 10px;
     color: var(--color1);
@@ -337,14 +291,55 @@ footer {
     background: var(--color1);
     color: var(--color2);
 }
-
 footer h4 {
     font-size: 1.3em;
 }
-
 footer ul {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+/* ************************* MEDIA QUERIES ************************* */
+@media screen and (max-width: 915px) {
+    nav {
+        display: none;
+    }
+    .main_div-container {
+        height: 1200px;
+    }
+    .main_div-articles {
+        flex-direction: column;
+    }
+    .main_section-news {
+        padding: 5% 0;
+    }
+    .main_section2-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_section2-txt {
+        text-align-last: center;
+    }
+    .main_section2-grid button {
+        width: 40%;
+        margin: 5%;
+    }
+    .main_section-news {
+        height: auto;
+    }
+    .main_article-flex {
+        flex-direction: column;
+    }
+    .main_article-flex article {
+        width: 100%;
+        margin: 5% 5px;
+    }
+    .lastsection {
+        display: none;
+    }
+    footer ul {
+        flex-wrap: wrap;
+    }
 }
