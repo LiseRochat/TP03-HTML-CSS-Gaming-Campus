@@ -171,7 +171,7 @@ header section div button i {
 /* ************************* DIV LES NEWS DU CAMPUS  ************************* */
 .main_section-news {
     background: var(--color4);
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -214,11 +214,6 @@ header section div button i {
     background: var(--color1);
 }
 /* ************************* ARTICLES LES NEWS DU CAMPUS  ************************* */
-main_section-news {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .main_article-flex {
     display: flex;
     justify-content: space-between;
@@ -230,36 +225,53 @@ main_section-news {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 470px;
+    height: 450px;
     width: calc(70%/3);
+    position: relative;
 }
 .main_article-img img {
-    box-shadow: 2px 2px 2px hsla(0, 0%, 4%, 0.392);
+    box-shadow: 2px 2px 10px hsla(0, 0%, 4%, 0.392);
+    border-radius: 3px;
+}
+.main_article-flex article h4 {
+    margin: 15px 0;
+    text-align: left;
+}
+.main_article-flex article p {
+    text-align-last: left;
+    font-size: 0.8em;
+    line-height: 20px;
 }
 .main_article-flex article a {
     color: var(--color5);
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    width: 100%;
-    margin-top: 5px;
-    align-items: left;
-    padding: 3px;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 0.9em;
-    font-weight: bold;
+    font-weight: 900;
 }
 .main_article-flex article a i {
-    padding-left: 10px;
-    font-size: 0.8em;;
+    transform: translateX(5px);
+    font-size: 0.8em;
+}
+.main_article-flex article a:hover {
+    color: var(--color1);
 }
 /* ************************* ARTICLES INFORMATIONS PRATIQUES ************************* */
 .lastsection_div-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0px 10%;
-    padding: 50px 0;
+    padding: 65px 0 20px;
     gap: 40px;
+    position: relative;
+}
+.lastsection_div-grid:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: var(--color4);
+    bottom: -40px;
 }
 .flex {
     display: flex;
