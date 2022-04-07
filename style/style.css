@@ -36,6 +36,7 @@ header nav ul {
     align-items: center;
     margin: 0px 15%;
     height: 12vh;
+    padding: 0 5px;
 }
 /* On aurait put faire en remplacement de la border-top : 
 nav li a:before {
@@ -86,7 +87,9 @@ header section div {
 header section div h1 {
     color: var(--color2);
     text-transform: uppercase;
-    margin: 20px;
+    margin: 30px 0 35px;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 header section div button {
     padding: 20px;
@@ -98,8 +101,8 @@ header section div button {
     letter-spacing: 0.2em;
 }
 header section div button i {
-    padding-right: 10px;
-    padding-left: 20px;
+    /* Deplacer > de 5 px sur l'axe des abscices !! */
+    transform: translateX(5px);
 }
 /* ************************* MAIN ************************* */
 /* ************************* DIV PARAGRAPHE ************************* */
