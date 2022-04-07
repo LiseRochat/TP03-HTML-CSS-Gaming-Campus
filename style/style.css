@@ -162,6 +162,11 @@ header section div button i {
     color: var(--color2);
     font-weight: bold;
     letter-spacing: 0.2em;
+    transition: 0.3s;
+}
+.main_div-articles article button:hover {
+    background: var(--color2);
+    color: var(--color1);
 }
 /* ************************* DIV LES NEWS DU CAMPUS  ************************* */
 .main_section-news {
@@ -170,24 +175,26 @@ header section div button i {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    line-height: 30px;
 }
 .main_section2-grid {
     display: grid;
     grid-template-columns: 70% 30%;
-    margin: 0 15%;
+    margin: 0 15%; 
 }
 .main_section2-txt h2 {
     text-transform: uppercase;
     font-weight: lighter;
-    letter-spacing: 0.1em;
-    margin-bottom: 2%;
+    letter-spacing: 2px;
+    text-align: left;
 }
 .main_section2-txt p {
     font-weight: bold;
     font-size: 0.9rem;
+    text-align-last: left;
 }
 .main_section2-grid button {
-    padding: 10px 0;
+    padding: 10px 20px;
     text-transform: uppercase;
     border: 1px solid var(--color1);
     background: transparent;
@@ -197,9 +204,14 @@ header section div button i {
     margin-top: 10%;
     border-radius: none;
     width: 70%;
+    transition: 0.3s;
 }
 .main_section2-grid button i {
-    padding-left: 10px;
+    transform: translateX(5px);
+}
+.main_section2-grid button:hover {
+    color: var(--color2);
+    background: var(--color1);
 }
 /* ************************* ARTICLES LES NEWS DU CAMPUS  ************************* */
 main_section-news {
