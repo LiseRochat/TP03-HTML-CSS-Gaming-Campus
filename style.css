@@ -46,7 +46,7 @@ header nav ul li a:hover {
 }
 /* ************************* BACKGROUND IMAGE ************************* */
 header section {
-    background: url(assets/img/bg.jpg) center/cover;
+    background: url(assets/img/bg.jpg) fixed center/cover;
     height: 80vh;
     display: flex;
     justify-content: center;
