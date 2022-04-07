@@ -1,3 +1,4 @@
+/* Pensez à plus regrouper les élements pour eviter une répétition de code !!! */
 @font-face {
     font-family: "Montserrat";
     src: url(./assets/font/Montserrat-VariableFont_wght);
@@ -18,11 +19,17 @@
 }
 body {
     font-family: "Montserrat";
+    margin: 0 auto;
 }
 button {
     cursor: pointer;
 }
 /* ************************* NAV BAR ************************* */
+nav {
+    /* On définit une taille à la nav bar*/
+    min-width: 1100px;
+    margin: 0 auto;
+}
 header nav ul {
     display: flex;
     justify-content: space-between;
@@ -50,7 +57,7 @@ header nav ul li a:hover {
 }
 /* ************************* BACKGROUND IMAGE ************************* */
 header section {
-    background: url(assets/img/bg.jpg) fixed center/cover;
+    background: url(../assets/img/bg.jpg) fixed center/cover;
     height: 80vh;
     display: flex;
     justify-content: center;
